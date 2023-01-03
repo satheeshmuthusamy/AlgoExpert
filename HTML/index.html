@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="icon" href="fireworks.png">
+    <base href="https://algoexpert.io">
+    <!-- meta tag with less importance  -->
+    <meta name="author" content="Satheesh M" />
+    <meta name="description" content="This page is about HTML meta tags" />
+    <!-- descriotion is readed by search engines (under 100 to 150 characters)-->
+  </head>
+  <body>
+    <h2>1.Sematic HTML</h2>
+
+    <a href="/content">Content</a>
+    <!-- it will leads the webpage that we given in the meta tag -->
+    <ol>
+      <li>Artilce-->self-contained,independently distributed</li>
+      <li>section-->Thematic group of content,not self contailed</li>
+      <li>header--> introduction</li>
+      <li>main--> main content,one per page</li>
+      <li>nav--> section of links</li>
+      <li>aside--> indirectly related to main content</li>
+      <li>footer--> footer of the webpage</li>
+    </ol>
+    <br />
+    <br />
+    <br />
+    <h2>2.Essential HTML tags</h2>
+    <p>Sematic is important</p>
+    <p>tags provide content structure not layout on style</p>
+    <br />
+    <ul>
+      <li>heading tag-->h</li>
+      <li>paragraph tag->p</li>
+      <li>
+        Images--> Img -->attributes-->src(path of
+        image)==>absolute(url),relative(address of the image in our system), &
+        alt->alternatve name for the image(image failed to load)
+      </li>
+      <li>list==>1.ordered(ol),2.unordered(ul)</li>
+      <!-- <pre></pre> -->
+      <li>pre-->preserve whitespace(to maintain whitespace)</li>
+      <pre>abc     xyz</pre>
+      <li>Br tag--> for line brake</li>
+      <li>Hr tag-->horizontal line</li>
+      <li>Anchor tag(target attribute)</li>
+      <li>Empathise tag(imporatnce(em))</li>
+      <li>Strong(shows imporatnce)</li>
+      <!-- <strong></strong> -->
+    </ul>
+
+    <h3>Tables</h3>
+    <table
+      border="3"
+      style="border-collapse: collapse; padding: 5px"
+      class="table--1"
+    >
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>DOB</td>
+          <td rowspan="1">Profession</td>
+        </tr>
+      </thead>
+      <tbody>
+        <td>Satheesh M</td>
+        <td>24</td>
+        <td>08-06-1999</td>
+        <td>Web developer</td>
+      </tbody>
+    </table>
+
+    <hr />
+    <hr />
+    <hr />
+
+    <table class="table--2">
+      <!-- Name or Heading for the table -->
+      <caption>
+        Budget
+      </caption>
+      <colgroup>
+        <col span="1" style="background: orange" />
+      </colgroup>
+      <thead>
+        <tr>
+          <!-- here scope for more convenient scope attribute to define the heading is for row or for column-->
+          <th colspan="1" scope="col">Category</th>
+          <th scope="col">Budget</th>
+          <th scope="col">Spending</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">food</th>
+          <td>$250</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <th scope="row">Entertainment</th>
+          <td>$300</td>
+          <td>$500</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th rowspan="1">Total</th>
+          <td>$550</td>
+          <td>$800</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br /><br /><br />
+    <hr />
+    <hr />
+    <hr />
+
+    <h2>FORMS</h2>
+    <section class="forms">
+      <form action="/myapi" method="POST">
+        <label for="username">Username</label>
+        <input
+          name="username"
+          id="username"
+          type="text"
+          placeholder="Enter user name here"
+          required
+        />
+
+        <label for="password">Password</label>
+        <!-- for is used to accessibility tool for screen reader -->
+        <input
+          name="password"
+          id="password"
+          type="password"
+          placeholder="Password"
+          minlength="8"
+          maxlength="15"
+          required
+        />
+        <!-- required is a boolean attribute if its there then it will be true else nothing required ="required" -->
+
+        <input type="date" />
+        <input type="checkbox" /><br />
+
+        <fieldset>
+          <legend>Choose your animal</legend>
+          <!-- fieldset gives border  -->
+          <!-- in radio only select one at a time -->
+          <input type="radio" name="animal" value="Dog" />
+          <label for="dog">Dog</label>
+
+          <input type="radio" name="animal" value="Cat" />
+          <label for="cat">Cat</label>
+
+          <input type="radio" name="animal" value="Lion" />
+          <label for="lion">Lion</label>
+        </fieldset>
+
+        <!-- either use input type="submit" or use normal button with Sumbit text -->
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <br /><br /><br />
+    <hr />
+    <hr />
+    <hr />
+
+    <h2>DOM</h2>
+    <p>HTML--->DOM--->UI</p>
+    <ol>
+      <li>provoeds API</li>
+      <li>tree structure</li>
+      <li>Elements & texts</li>
+      <li>top to bottom</li>
+    </ol>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>Accesibility</h2>
+    <h4>
+      Accessibility tree(Our users will not always use website only,sometimes
+      they will use screen readers and other stuffs so our website should be
+      adaptable to all the users)
+    </h4>
+    <ol>
+      <li>Similar to DOM tree</li>
+      <li>contains information about accessibility</li>
+    </ol>
+    <p>
+      Nodes have --> names,description,roles,state==>current state of the node
+    </p>
+
+    <h4>Writing accessible Hmtl</h4>
+    <p>Use descriptive content,tables and alt attributes</p>
+    <p>Use sematic elements</p>
+    <p>Text keyboard controls==>Navaigate throuth website with keyboards</p>
+
+    <h4>
+      For more complex websites--> WAI_ARIA==>Web Accessibility
+      Initiative-Accessible Rich Internet Applications-->written by W3C schoosl
+    </h4>
+    <ol>
+      <li>Rolse:What an element does</li>
+      <li>Property:Extra meaning(EX:labels)</li>
+      <li>States:Current state (EX:disabled)</li>
+    </ol>
+
+    <h3>Landmark roles</h3>
+    <ul>
+      <li>major content areas</li>
+      <li>offer times navigated to first</li>
+      <li>Ex: banner ,main navigation classes</li>
+    </ul>
+
+    <h3>Structure role</h3>
+    <ol>
+      <li>Interactive elements</li>
+      <li>EX:tabs ,search boxes,buttons EX:(role="list")</li>
+    </ol>
+
+    <h3>Widget roles</h3>
+    <ul>
+      <li>Interactive elemets</li>
+      <li>EX:table ,searchbox,button</li>
+      <div role="button">Click me!</div>
+    </ul>
+
+    <h3>Window roles</h3>
+    <p>sub windows in the browser</p>
+    <p>EX:dialog,alert dialog</p>
+    <!-- Example -->
+    <div role="dialog" aria-labelledby="title">
+      <h2 id="title">Successfully changed changes</h2>
+      <button>Dismissal</button>
+    </div>
+
+    <h3>Live region roles</h3>
+    <p>Dynamic content change</p>
+    <p>EX: timer ,log,changes</p>
+    <ol role="log">
+      <li>Chat message1</li>
+      <li>Chat nessage 2</li>
+      <li>Chat message 3</li>
+    </ol>
+    <h3>Aria-Live</h3>
+    <h4>Dynamic content & importance</h4>
+    <ul>
+      <li>Off: Don,t announce changes</li>
+      <li>Polite: Announce changes when idle</li>
+      <li>assertive: Announce changes as soon as possible</li>
+    </ul>
+    <div aria-live="polite">My content will change!</div>
+
+    <h3>Aria ststes</h3>
+    <ul>
+      <li>-aria-checked:Check status</li>
+      <li>-aria-disables: Element is disabled</li>
+      <li>-aria-expanded : Expanded or collaped element</li>
+      <li>-aria-hidden : Not visible on the page</li>
+      <li>-aria-passed: toggle currently "pressed"</li>
+      <li>-aria-selected: Element</li>
+    </ul>
+
+    <h3>Other concerns</h3>
+    <p>Browser compatibility==>support for all devices</p>
+    <p>Css accessiblity</p>
+    <p>Internationalization</p>
+
+    <!-- using accessible tree -->
+    <ul role="tablist" class="tablist--1" style="list-style: none">
+      <!-- to use accessibilities go to accessobilities in console window -->
+      <li role="tab" aria-controls="panel1" aria-selected="true" id="tab1">Tab1</li>
+      <li role="tab" aria-controls="panel2" aria-selected="false" id="tab2">Tab2</li>
+      <li role="tab" aria-controls="panel3" aria-selected="false" id="tab3">Tab3</li>
+    </ul>
+
+    <div role="tabpanel" id="panel-1" aria-labelledby="tab1">
+      <p>panel1</p>
+    </div>
+    <div role="tabpanel" class="hidden" id="panel-2" aria-labelledby="tab2">
+      <p>panel2</p>
+    </div>
+    <div role="tabpanel" class="hidden" id="panel-3" aria-labelledby="tab3">
+      <p>panel3</p>
+    </div>
+  </body>
+</html>

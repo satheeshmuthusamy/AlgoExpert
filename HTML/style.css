@@ -1,0 +1,19 @@
+.tablist--1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 2px solid black;
+}
+body{
+    background-color: orange;
+}
+#panel-1,#panel-2,#panel-3{
+    position: absolute;
+    background-color: aliceblue;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+}
+.hidden{
+    display: none;
+}

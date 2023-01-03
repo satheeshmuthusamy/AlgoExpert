@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- these js files can access to each other -->
+    <script src="person.js"type="module"></script>
+    <script src="helper.js"type="module"></script>
+    <script src="module.js"type="module"></script>
+
+    <!-- nomodule-->it is used for older systems which doesn't support new JS ,we can wrap all the js code in one file and we can link that if all other js files are not supported by the old browser or old systems -->
+    <script src="nomoduleversion.js" nomodule></script>
+    <!-- The datas can be imported only if the scripts placed before the last script file -->
+    <title>Modules</title>
+</head>
+<body>
+    <h3>Modules</h3>
+</body>
+</html>

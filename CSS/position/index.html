@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Positions</h3>
+    <ol>
+      <li>
+        static==>The default value, the element follows the flow of the content
+      </li>
+      <br />
+      <li>
+        fixed==>The element is positioned relative to the viewport and removed
+        from the normal flow of the document. The top, right ,left and bottom
+        properties can be used to move the element
+      </li>
+      <br />
+      <li>
+        relative==> The element is positioned in the same place as it would be
+        eith static . however it can be responded with top,left,right and bottom
+        relative to its natural position
+      </li>
+      <br />
+      <li>
+        sticky==> The element will be similar to relative positioned element
+        ,but once it scrolls off it will stay to fixed to screen, essentially
+        acting as position : fixed. This is particularly useful for menu bars
+        that need to "stick" to the top if the screen as the user scrolls
+      </li>
+      <br />
+      <li>
+        absolute==>BY default this will act as fixed except element will be
+        relative to the document instead of viewport. This means that as the
+        page is scrolled it will move with the page rather than stay at the same
+        viewport location. However if any element above it in the DOM,
+        oftentimes referred to as an ancestor, has a position value each other
+        than static ,then it will be positioned to that nearest positioned
+        ancestor.
+      </li>
+      <br />
+
+      <h4>EXAMPLE</h4>
+
+      <p id="single--line">I am a paragraph!</p>
+      <section>
+        <div id="box">BOX </div>
+        <p id="long">
+          I am a paragraph! I am a paragraph! I am a paragraph! I am a
+          paragraph! I am a paragraph! I am a paragraph! I am a paragraph! I am
+          a paragraph! I am a paragraph! I am a paragraph!
+        </p>
+        <h4>z-index ==>to show or overshadow required elements over other elements ==>create stacking cotexts  </h4>
+        <h4>float</h4>
+        <p>float around other elements, removes the content from the flow ==>float:left (or) right  ==> float the element at one side of the container</p>
+        <p>Used in blog posts</p>
+        <p>clear==> Make the element go belong to the element which has float property</p>
+        <p>clear:both(right and left)</p>
+      </section>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+
+/* section{
+    position: relative;
+    z-index: 4;
+    now it will override the green which has z index of 3
+} */
+
+#red{
+    z-index: 1;
+    /* red stacking context */
+
+    background-color: red;
+}
+
+
+#blue{
+    z-index: 2;
+    /* blue stacking context */
+    background-color: blue;
+    top: 100px;
+    left: 50px;
+}
+
+#green{
+    z-index: 3;
+    /* green stacking context */
+
+    background-color: green;
+    top: 200px;
+    left: 20px;
+}
+
+div{
+    position: fixed;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}

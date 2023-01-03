@@ -1,0 +1,102 @@
+/* universal selector selects everything (All tags will be under * tag)*/
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    /* background-color: bisque; */
+}
+
+h4{
+    text-align: center;
+    color: blue;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+p{
+    /* background-color: orange; */
+    /* color: white; */
+    height: 20px;
+    min-height: 15px;
+    font-size: 1.25rem;
+    /* 1.25 of root elemment */
+    width: 50%;
+}
+
+/* attribute selector */
+/* a[href="youtube.com"]{ */
+    /* here ^ symbol selects all links starts with youtube.com */
+a[href^="youtube.com"]{
+    color: green;
+}
+
+/* combined selector ==>here it selects paragraph inside the footer tag only*/
+/* footer p{
+    color: aqua;
+} */
+
+/* child selector =>it applies only on the direct child element */
+footer>p{
+    color: aqua;
+}
+
+/* sibling selector */
+/* adjacent sibling ==> first sibling (there should be no elements between two tags called first or adjacent siblings )*/
+
+/* Pseudo classes */
+/* :link =>unvisited */
+input:focus{
+    outline: 2px solid blueviolet;
+}
+/* if the input didnot fullfilled the validation */
+/* not(:focus) to avoid the red color inbetween the input time of user only it works if it is not focused*/
+input:invalid:not(:focus){
+    outline: 2px solid red;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+
+/* selects first sibling in the div */
+p:first-of-type{
+    color:teal;
+}
+
+/* selects last sibling in the div */
+p:last-of-type{
+    color:pink
+}
+
+/* to select n th number of paragraph ==>we can use odd , even and manual inputs*/
+p:nth-of-type(3){
+    color:blue;
+}
+
+/* first element of the first node */
+/* use last ,odd ,even also */
+p:first-child{
+    color:purple;
+}
+
+/* PSEUDO ELEMENTS */
+/* used for select perticular elements */
+/* p::first-letter{
+    font-size: 2em;
+} */
+/* p::first-line{
+    font-size: 2em;
+} */
+
+/* adds > before > symbol */
+p::before{
+    content: ">";
+}
+p::after{
+    content: ">";
+}

@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    /* margin: 24px; */
+    /* If the elements are immediate next to each other the vertical distance between two elements are total 24 px(minimum 24 px from one element to another element) */
+    /* margin-top,right,bottom,letf */
+    /* margin: 24px 20px 16px 10px; */
+    /* top right bottom left (clockwise)*/
+    /* vertical horizontal */
+    margin: auto;
+    /* to center element */
+    /* margin: 24px auto; */
+    /* 24px vertical height and center in horizontal */
+    /* margin auto does the margin to zero */
+    /* centering the element */
+    /* we can also use negative margins */
+    /* margin-left: -10px; */
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+
+    /* border works same as all others border-top,bottom,left and right */
+    border-radius: 10px;
+    /* border-radius:50% ==>50% of the width*/
+    /* width: 300px; */
+    /* height:300px;==>creates exact circle with the radius of 150px & height of 300 px*/
+    background-color: lightblue;
+    /* padding and margin will not affect the height of inline elements because its height is always default of the font height */
+
+    /* padding is the distance between element and border */
+    /* padding cannot take a negative value */
+
+
+}

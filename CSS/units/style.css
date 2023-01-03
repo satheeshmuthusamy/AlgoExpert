@@ -1,0 +1,40 @@
+:root{
+    background-color: rgb(216, 231, 241);
+}
+
+.parent{
+    width:55%;
+    font-size: 1.25em;
+    /* always use % in width to overcome the overflow of elements */
+    border: 2px solid black;
+}
+.red{
+    background-color: red;
+    /* we can use rgba(0.265,265,0.5) & hex code & HSL */
+    /* use consistant format of colors throughout the project */
+    width: 50%;
+    font-size: 1em;
+    /* 50% of parent tag */
+}
+.blue{
+    background-color: blue;
+    width: 50vw;
+    font-size: 1rem;
+    /* 50% of viewport width */
+}
+.green{
+    background-color: green;
+    width: 10rem;
+    font-size: 16px;
+    /* dont use px in text because it will not affected or changed by the route element */
+    /* 10*16 px */
+}
+
+div{
+    margin: 10px;
+}
+
+/* to improve the readability use ch(character) unit  (important ==>If we use % for paragrapphs then it will be definately look large when the page is in 100% width)*/
+p{
+    width: 70ch;
+}

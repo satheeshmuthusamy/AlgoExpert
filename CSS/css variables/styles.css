@@ -1,0 +1,34 @@
+/* css variables==> In big apps we cant use the same color everywhere DRY code
+It will take soo much time and if we wanted to change that it will take more and more time too to neglecte we can use css variables */
+
+:root{
+--main-color:#00334c;
+--section-size:200px;
+--flex-gap:12px;
+}
+/* instad of root we can use html also */
+
+
+h1{
+    color: var(--main-color);
+}
+h2{
+    padding: 12px;
+}
+
+
+main{
+    display: flex;
+    border: 2px solid black;
+    gap: var(--flex-gap);
+    /* width: 412px; */
+    width: calc(var(--section-size)*2 + var(--flex-gap));
+}
+
+section{
+    flex-basis: var(--section-size);
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: white;
+    background-color: var(--main-color);
+}

@@ -1,0 +1,50 @@
+div{
+    background-color: aqua;
+    width: 30%;
+    height: 6em;
+    border-radius:12px;
+    margin:4em;
+    /* transition */
+    /* transition: width; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: linear; */
+    /* ease, */
+    /* transition-delay: 1s; */
+    /* shorthand notation */
+    transition:  width 1s ease 1s, transform 1s ease 0s;
+    transition:  all 1s ease 1s;
+    /* animation property */
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* forwards stays in the end of animation */
+    animation-direction: reverse;
+    /* animaiton from reverse */
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    /* animation play state paused will pass animation with its current animation position -->more usefull in js */
+
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* indication of movemenr curve */
+    animation-timing-function: steps(4);
+    /* steps involved in animaiton */
+
+    /* shorthand notation */
+    animation: move 2s forwards infinite running linear steps(4);
+}
+/* 1.transition property */
+/* 2.Animation property */
+div:hover{
+    width: 60%;
+    transform:rotate(180deg);
+}
+
+@keyframes move{
+    50%{
+        transform: translate(200px ,0px );
+    }
+    100%{
+        transform: translate(200px ,300px );
+    }
+}

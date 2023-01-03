@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Units in css</title>
+</head>
+<body>
+    <section class="section--1">
+        <h3>Various units used in css</h3>
+        <h4>length</h4>
+        <ol>
+            <li>PX: pixels,absolute length(Which is not dependent on something)</li>
+            <li>-em: relative to font size(dependent unit)</li>
+            <li>-rem(dependent unit): relative to root element font size(closest relative value)</li>
+            <li>-vw: 1% of viewport width</li>
+            <li>-vh: 1% of viewport height</li>
+            <li>-ch: width of "O"th character in html(especially in paragraphs which contains 50-70 characters)</li>
+            <li>-%: Percentage,usually relative to parent value</li>
+        </ol>
+
+        <h3>margin / padding </h3>
+        <ol>
+            <li>-rem: for closer to absolute value(responsive website)</li>
+            <li>-em: to scale with root element</li>
+            <li>-px: for small values last resort</li>
+        </ol>
+
+        <h3>Borders,shadows</h3>
+        <ol>
+            <li>-px: for small values</li>
+            <li>-rem/em: okay here too-->scaling doesnot always look great</li>
+        </ol>
+
+        <h3>Font size</h3>
+        <ul>
+            <li>-rem: is usually best</li>
+            <li>-em: to scale to parent size</li>
+            <li>-px: as a last resort</li>
+        </ul>
+
+
+        <h3>Colors</h3>
+        <ul>
+            <li>-keywords: red,blue,green,etc</li>
+            <li>-HEX RGB: #4B70AF(amount of red,green,blue)</li>
+            <li>RGB:-RGBA(75,15,175,0.5)</li>
+            <li>HSL: Hus,saturation and lightness(hsl(210,40%,49%,0.8))</li>
+        </ul>
+    </section>
+
+    <div class="parent">
+        <div class="red">Red</div>
+        <div class="blue">Blue</div>
+        <div class="green">Green</div>
+    </div>
+    <p>
+        I am very long paragraph.
+        I am very long paragraph.
+        I am very long paragraph.
+        I am very long paragraph.
+        I am very long paragraph.
+        I am very long paragraph.
+        I am very long paragraph.
+        I am very long paragraph.
+    </p>
+
+    <h3>Inline VS block element</h3>
+    <p>Inline element don't have width and height(It can't take css width and height properties)</p>
+    <p>To change inline element  to block element use Display:block</p>
+    <p>
+        If block to inline use display:inline property
+    </p>
+    <p>Display:inline:block==>It doesn't go to next line but we can define the css properties (Widths and heights)(Images contains inline-block property)</p>
+</body>
+</html>

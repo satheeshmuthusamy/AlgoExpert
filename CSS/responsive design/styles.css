@@ -1,0 +1,81 @@
+body{
+    display:grid;
+    /* grid-template-columns: 100px 200px 100px; */
+    grid-template-columns:  3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    /* grid-template-rows: repeat(3,1fr); */
+    /* to define where to place grid items */
+    grid-template-areas: "header header"
+    "main aside"
+    "footer footer";
+    gap: 10px;
+    /* justify-items: center;
+    align-items: center;
+    /* justify-item+align-item= place-items */
+    /* place-items: center; */ 
+}
+/* implecit grid==>Automated columns , Explicit==> we can define no of columns and rows explicitely */
+
+header{
+    grid-area: header;
+    /* place-self: center; */
+    /* to center the item */
+
+    /* grid-column-start: 1;
+    grid-column-start: span 2;
+    /* grid-column-end: 4; */
+    /* grid-column-start+grid-column-end=>grid-column */
+    /* grid-column: 1/3;  */
+  
+    /* grid-row: 2; start heading in second row*/
+}
+
+main{
+    /* nesting flexbox inside grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* direct children pf the body */
+body>*{
+    border: 10px solid skyblue;
+}
+
+@media(max-width:800px){
+    body{
+        background-color: yellowgreen;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-template-areas: "header "
+        "main"
+        "aside"
+        "footer";
+    }
+}
+
+@media(max-width:600px){
+    aside{
+        display: none;
+    }
+    body{
+        background-color: yellowgreen;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-template-areas: "header "
+        "main"
+        "footer";
+    }
+}

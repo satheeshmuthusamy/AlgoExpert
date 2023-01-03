@@ -1,0 +1,64 @@
+section{
+    display: flex;
+    flex-direction: row;
+    /* main flex is happening in horizontal */
+    flex-wrap: wrap;
+    /* to overcome overflow of flex items==>new line */
+
+    /* flex-direction + flex-wrap=flex-flow */
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    /* justifying he whole content or every  flex item (main axis-x)*/
+    align-items:flex-start ;
+    /* cross axis Y*/
+
+    align-content: space-around;
+    /* it determines how lines are positioned along with cross axis() */
+
+
+    gap: 10px;
+    /* space between two items */
+
+    /* flex-direction: column; */
+    /* main flex is happening in vertical*/
+
+    /* flex-direction: column-reverse; */
+    /* starts from the bottom in backward order*/
+    /* flex-direction: row-reverse; */
+    /* flex items starts from the right side of the viewport in backward order */
+    height: 90vh;
+    border: 2px dotted black;
+}
+div{
+    border: 5px solid black;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.red{
+    flex-basis: 200px;
+    /* 100vh of its baseline */
+    flex-shrink: 1;
+    /* to shrink the flex-item(0 -to shrink off,1- to shrink on) */
+
+    /* shorthand notation for grow shrink baseline */
+    flex: 1 0 10px;
+    
+    order: 0;
+    /* to place individual items (-1==>starting;0 ==>normal;1==>end)*/
+    /* flex-grow:1; */
+    /* to occupy remaining space or white space in a flex row (no unit)*/
+    height: 75px;
+    background-color: red;
+}
+.green{
+    /* flex-grow: 1; */
+    height: 125px;
+    background-color: green;
+}
+.blue{
+    height: 100px;
+    background-color: blue;
+}

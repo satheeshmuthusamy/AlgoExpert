@@ -1,0 +1,37 @@
+/* *{
+    margin: 0;
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+/* } */ 
+
+/* main{
+background-image: url("https://images.pexels.com/photos/666839/pexels-photo-666839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-clip: padding-box;
+background-origin: padding-box;
+background-repeat: no-repeat;
+background-size: 50% auto;
+/* width and height */
+/* height: 400px;
+border: 2px solid black;
+} */ 
+
+main{
+    color: red;
+    /* inherted property */
+    border: 2px solid black;
+}
+
+/* to change agent stylesheet property */
+button{
+    all: unset;
+    /*unset removes specs of user agent style sheet   */
+    color: inherit;
+    /* inherit from parent element */
+    color: initial;
+    /* initial property before applying css properties*/
+    color: unset;
+    /* undoing the inhertence or removing inherited css property */
+    border: inherit;
+    border: revert;
+    /* revert looks for css property if not there the apply specs in agent stylesheet */
+}

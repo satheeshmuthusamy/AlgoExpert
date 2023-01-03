@@ -1,0 +1,21 @@
+
+/* adding classes dynamically */
+.blue{
+    color: blue;
+}
+
+.big{
+    font-size:2em ;
+}
+
+
+
+#scrollable{
+    position: relative;
+    padding: 1em;
+    background-color: aqua;
+    margin: 1em;
+    overflow:auto;
+    border: 2px solid black;
+    height: 70px;
+}
